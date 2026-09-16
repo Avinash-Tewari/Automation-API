@@ -1,8 +1,11 @@
 from fastapi import FastAPI
+import os 
+import logging 
+from fastapi.middleware.cors import CORSmiddleware
+from contextlib import asynccontextmanager
+
 
 app= FastAPI()
 
-@app.get("/")
-def index():
-    return {"message": "This is the index page"}
+
 
