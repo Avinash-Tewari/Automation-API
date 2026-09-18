@@ -1,7 +1,3 @@
-"""
-Async SQLAlchemy engine, session factory, and dependency.
-"""
-
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine, async_sessionmaker
 from sqlalchemy.orm import DeclarativeBase
 from app.config import settings
@@ -20,8 +16,7 @@ async def init_db():
         await conn.run_sync(Base.metadata.create_all)
 
 
-async def get_db() -> AsyncSession:  # type: ignore[misc]
-    """FastAPI dependency that yields an async DB session."""
+async def get_db() -> AsyncSession:  
     async with async_session() as session:
         try:
             yield session
