@@ -24,6 +24,18 @@ class UserOut(BaseModel):
     class config:
         from_attributes= True
 
+class ConversationCreate(BaseModel):
+    title: Optional[str] = "New Conversation"
+
+
+class ConversationOut(BaseModel):
+    id: str
+    title:str
+    created_at: datetime
+    updated_at: datetime
+
+    class config:
+        from_attributes = True
 
 
 
