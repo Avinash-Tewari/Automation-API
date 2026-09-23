@@ -1,3 +1,8 @@
+
+"""
+Document upload & management endpoints.
+"""
+
 from sqlalchemy.engine import result
 from fastapi import Depends
 import logging 

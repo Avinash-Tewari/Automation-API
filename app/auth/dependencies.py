@@ -1,3 +1,7 @@
+"""
+FastAPI dependency to extract and validate the current user from JWT.
+"""
+
 from sqlalchemy import select
 import token
 from fastapi import HTTPException, Depends, status
