@@ -2,7 +2,6 @@
 Image upload & OCR processing endpoints.
 """
 
-from fastapi.openapi.utils import status_code_ranges
 import logging
 from fastapi import HTTPException, APIRouter, Depends, File,UploadFile
 from sqlalchemy.ext.asyncio import AsyncSession
