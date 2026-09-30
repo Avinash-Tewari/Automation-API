@@ -1,0 +1,1 @@
+A sentiment analysis chatbot which retrieves document and suggests about the document around 80 percent of accuracy. using random forest for accuracy as the dataset having random columns and the decision needs to be picked for the evaluation model
